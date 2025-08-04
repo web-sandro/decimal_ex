@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor Decimal ↔ Hexadecimal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>litoralnortesoftware.co.br</h1>
+    <h2>Decimal ↔ Hexadecimal</h2>
+
+    <label for="decimal">Número Decimal:</label>
+    <input type="number" id="decimal" placeholder="Ex: 255" oninput="decimalParaHex()">
+
+    <label for="hexadecimal">Número Hexadecimal:</label>
+    <input type="text" id="hexadecimal" placeholder="Ex: FF" oninput="hexParaDecimal()">
+
+    <div class="resultado" id="resultado">Digite um valor em qualquer campo...</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
