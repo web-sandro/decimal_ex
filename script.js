@@ -29,11 +29,11 @@ function decimalParaHex() {
 
   hex = hex || "0";
   hexInput.value = hex;
-  resultado.innerHTML = `Decimal: <strong>( ${decimal} )₁₀</strong> → Hexadecimal: <strong>( ${hex} )₁₆</strong>`;
+  resultado.innerHTML = `Decimal: <strong>( ${decimal} )₁₀</strong> → Hex: <strong>( ${hex} )₁₆</strong>`;
 
   etapas.push(`<br><strong>Resultado final: ( ${decimal} )₁₀ → ( ${hex} )₁₆</strong>`);
 
-  passos.innerHTML = "<strong>Passos da conversão Decimal → Hexadecimal:</strong><br>" +
+  passos.innerHTML = "<strong>Passos da conversão Decimal → Hex:</strong><br>" +
     etapas.join("<br>");
 }
 ado.innerHTML = `Decimal: <strong>${decimal}</strong> → Hexadecimal: <strong>${hex}</strong>`;
@@ -65,10 +65,10 @@ function hexParaDecimal() {
   });
 
   decimalInput.value = decimal;
-  resultado.innerHTML = `Hexadecimal: <strong>( ${hex} )₁₆</strong> → Decimal: <strong>( ${decimal} )₁₀</strong>`;
+  resultado.innerHTML = `Hex: <strong>( ${hex} )₁₆</strong> → Decimal: <strong>( ${decimal} )₁₀</strong>`;
 
   etapas.push(`<br><strong>Resultado final: ( ${hex} )₁₆ → ( ${decimal} )₁₀</strong>`);
 
-  passos.innerHTML = "<strong>Passos da conversão Hexadecimal → Decimal:</strong><br>" +
+  passos.innerHTML = "<strong>Passos da conversão Hex → Decimal:</strong><br>" +
     etapas.join("<br>");
 }
